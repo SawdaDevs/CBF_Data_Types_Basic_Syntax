@@ -135,7 +135,16 @@ first_bob_index = names.index("Bob")
 print("Index of first occurrence of 'Bob' in Names List:", first_bob_index)
 #finding index of an element with start and end parameters
 second_bob_index = names.index("Bob", first_bob_index + 1)
-print("Index of second occurrence of 'Bob' in Names List:", second_bob_index)   
+print("Index of second occurrence of 'Bob' in Names List:", second_bob_index)  
+
+# copying a list
+original_list = [1, 2, 3, 4, 5]
+copied_list = original_list.copy()
+print("Original List:", original_list)
+print("Copied List:", copied_list)
+print(id(original_list), id(copied_list))  # Different memory addresses 
+print("Are both lists equal?", original_list == copied_list)  # True
+print("Are both lists the same object?", original_list is copied_list)  # False
 
 
 
