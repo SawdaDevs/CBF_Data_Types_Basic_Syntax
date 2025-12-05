@@ -37,4 +37,15 @@ print("Reversed Step Sliced Names Tuple:", reversed_step_names)
 mixed = (1, "two", 3.0, True)
 del mixed
 # print("Mixed Tuple after delete:", mixed)  # This will raise an error since '
-print("Mixed Tuple has been deleted and cannot be accessed.", mixed)
+# print("Mixed Tuple has been deleted and cannot be accessed.", mixed)
+
+#other methods include count and index
+sample_tuple = (1, 2, 2, 3, 4, 2)
+count_of_twos = sample_tuple.count(2)
+print("Count of 2 in sample_tuple:", count_of_twos)
+print("Count of 5 in sample_tuple:", sample_tuple.count(5))
+index_of_three = sample_tuple.index(3)
+print("Index of 3 in sample_tuple:", index_of_three)
+print("Index of first occurrence of 2 in sample_tuple:", sample_tuple.index(2))
+print("Index of 2 starting from index 2 in sample_tuple:", sample_tuple.index(2, 2))
+# index_of_five = sample_tuple.index(5)  # This would raise a ValueError    
