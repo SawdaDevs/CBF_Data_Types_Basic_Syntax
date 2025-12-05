@@ -101,6 +101,9 @@ print("Reversed List1:", list1)
 unsorted_list = [5, 2, 9, 1, 5, 6]
 unsorted_list.sort()
 print("Sorted List:", unsorted_list)
+#can also sort in descending order
+unsorted_list.sort(reverse=True)
+print("Sorted List in Descending Order:", unsorted_list)
 # length 
 print("Length of Names List:", len(names))
 # membership testing
